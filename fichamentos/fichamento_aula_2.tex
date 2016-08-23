@@ -1,0 +1,181 @@
+
+
+% UNIVERSIDADE FEDERAL DA PARAÍBA
+% PROGRAMA DE PÓS-GRADUAÇÃO EM ECONOMIA
+
+% Prof. Aléssio Almeida
+% Prof. Hilton Ramalho
+
+
+
+% ESTATÍSTICA COMPUTIONAL - AULA 2
+
+%--------------------------------------
+
+% EXEMPLO
+
+% Classe do documento [opções]{classe}
+\documentclass[12pt,a4paper]{article}
+
+
+% Pacotes para codificação de caracteres especiais
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Pacote para recuo de parágrafos
+\usepackage{indentfirst}
+
+% Pacote para margens do documento [opcoes de margens]
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+
+% Pacote para espaçamento entre linhas
+\usepackage{setspace}
+
+% Pacotes para símbolos matemáticos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Pacotes pra ajuste de texto
+\usepackage{float}
+\usepackage{fancyvrb}
+
+
+% Comandos para ajustamento de texto
+
+% Recuo do parágrafo:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro
+% \onelineskip % alternativa
+\setlength{\parskip}{0.25cm}  
+
+% Espaçamento entre linhas (setspace package)
+
+\singlespacing % Para um espaçamento simples
+% \onehalfspacing %Para um espaçamento de 1,5
+% \doublespacing %Para um espaçamento duplo
+
+
+
+% Informações do documento
+\title{Fichamento aula 2 -- Estatística Computacional} 
+\author{Eduardo Paz Serafim}
+\date{}
+
+
+
+% Início do ambiente de texto
+\begin{document}
+	
+% Criar cabeçalho com título e autor	
+\maketitle	
+
+\section{Ambientes para fórmulas matemáticas}
+No \LaTeX\ existem alguns ambientes distintos para representação de fórmulas matemáticas, entre eles existem pequenas distinções que se adequam a diferentes formas de uso. A seguir está apresentada a estrutura básica, formas de alinhamento e alternativas comuns utilizadas.
+\subsection{Estrutura básica}
+O ambiente 'equation' pode ser utilizado com a seguinte sintaxe: 
+
+\begin{BVerbatim}
+\begin{equation}
+	% conteúdo
+\end{equation}
+\end{BVerbatim}
+\\
+\\
+Dentro do ambiente, o conteúdo inserido será interpretado como uma formula matemática, exemplos:
+
+\begin{BVerbatim}
+\begin{equation}
+	x^2 + x + 0 = 0;
+\end{equation}
+\end{BVerbatim}
+\\
+\\
+Resulta em:
+\begin{equation}
+	x^2 + x + 0 = 0;
+\end{equation}
+\\
+Como se observa, o item por padrão é numerado. Caso não seja necessário a numeração, poderá ser realizado da seguinte forma:
+
+\begin{BVerbatim}
+\begin{equation*}
+	\cos (2\theta) = \cos^2 \theta - \sin^2 \theta
+\end{equation*}
+\end{BVerbatim}
+\\
+\\
+Resulta na equação não  numerada a seguir:
+\begin{equation*}
+	\cos (2\theta) = \cos^2 \theta - \sin^2 \theta
+\end{equation*}
+
+\subsection{Alinhamentos}
+Ao utilizar diversas funções dentro de um mesmo ambiente pode ser necessário alinha-las para produzir um texto mais legível, para isso poderá ser utilizado o ambiente 'align' juntamente com o caractere '\&' que define o ponto de alinhamento no texto, no exemplo abaixo, podemos verificar a diferença no alinhamento:
+
+\begin{BVerbatim}
+\begin{align}
+	&2x - 5y =  8 \\ \nonumber
+	&3x + 9y + 2z =  -12 
+\end{align}
+
+\begin{align}
+	2x - 5y &=  8 \\ \nonumber
+	3x + 9y + 2z &=  -12
+\end{align}
+\end{BVerbatim}
+\\
+\\
+A primeira equação foi alinhada pelo início, e a segunda pela posição do sinal de igualdade:
+\begin{align}
+	&2x - 5y =  8 \\ \nonumber
+	&3x + 9y + 2z =  -12 
+\end{align}
+\begin{align}
+	2x - 5y &=  8 \\ \nonumber
+	3x + 9y + 2z &=  -12
+\end{align}
+
+O ambiente 'align' também é útil para apresentar várias formulas distribuídas ao longo da mesma linha, como no exemplo a seguir:
+
+\begin{BVerbatim}
+\begin{align*}
+	x&=y           &  w &=z              &  a&=b+c\\
+	2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
+	-4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
+\end{align*}
+\end{BVerbatim}
+\\
+\\
+Resultando em: 
+\begin{align*}
+	x&=y           &  w &=z              &  a&=b+c\\
+	2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
+	-4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
+\end{align*}
+
+
+
+\subsection{Alternativas}
+
+
+\section{Representação de estruturas básicas}
+\subsection{Exponenciação}
+\subsection{Sobrescrito}
+\subsection{Fração}
+\subsection{Raízes}
+\subsection{Logaritmo}
+
+\section{Simbolos}
+\subsection{Mais utilizados}
+\subsection{Letras gregas}
+\subsection{Funções}
+
+\section{Tabelas}
+\subsection{Estrutura básica}
+\subsection{Alinhamentos e Bordas}
+\subsection{Titulo e Fonte}
+
+	
+\end{document}
