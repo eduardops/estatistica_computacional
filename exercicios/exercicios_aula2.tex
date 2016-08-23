@@ -1,0 +1,148 @@
+
+
+% UNIVERSIDADE FEDERAL DA PARAÍBA
+% PROGRAMA DE PÓS-GRADUAÇÃO EM ECONOMIA
+
+% Prof. Aléssio Almeida
+% Prof. Hilton Ramalho
+
+
+
+% ESTATÍSTICA COMPUTIONAL - AULA 1
+
+%--------------------------------------
+
+% EXEMPLO
+
+% Classe do documento [opções]{classe}
+\documentclass[12pt,a4paper]{article}
+
+
+% Pacotes para codificação de caracteres especiais
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Pacote para recuo de parágrafos
+\usepackage{indentfirst}
+
+% Pacote para margens do documento [opcoes de margens]
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+
+% Pacote para espaçamento entre linhas
+\usepackage{setspace}
+
+% Pacotes para símbolos matemáticos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{float}
+
+
+% Comandos para ajustamento de texto
+
+% Recuo do parágrafo:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro
+% \onelineskip % alternativa
+\setlength{\parskip}{0.25cm}  
+
+% Espaçamento entre linhas (setspace package)
+
+\singlespacing % Para um espaçamento simples
+% \onehalfspacing %Para um espaçamento de 1,5
+% \doublespacing %Para um espaçamento duplo
+
+
+
+% Informações do documento
+\title{Exercícios aula 2 -- Estatística Computacional} 
+\author{Eduardo Paz Serafim}
+\date{}
+
+
+
+% Início do ambiente de texto
+\begin{document}
+	
+% Criar cabeçalho com título e autor	
+\maketitle	
+
+1. 
+$$ x_1, x_2 = \dfrac{ -\beta \pm \sqrt{\alpha^2 -4 \cdot \alpha \omega \cdot \gamma}}{2 \alpha \omega}, \ (\alpha^2 -4 \alpha \omega \gamma) > 0. $$
+
+
+2.
+\begin{align}
+         x^2 + 2x - 15 &= 0,  \\
+\Rightarrow (x+5)(x-3) &= 0, \nonumber  \\
+         \Rightarrow x &= -5,\ 3.
+\end{align}
+
+
+3. 
+\begin{equation*}
+\sin 30^\circ = \frac{1}{2} = \frac{1}{\sqrt{3}}\sin 60^\circ = \cos (\pi / 2).
+\end{equation*}
+
+4.
+\begin{equation*}
+\arccos x = \int_x^1 \frac{\mathrm{d}u}{\sqrt{1-u^2}}.
+\end{equation*}
+
+5.
+\begin{equation*}
+n^\mathrm{th}, \qquad 1^\mathrm{st}, \qquad 2^\mathrm{nd}.
+\end{equation*}
+
+6.
+\begin{equation*}
+\begin{pmatrix}
+F[1,1] & \cdots & F[1,m] \\
+\vdots & \ddots & \vdots \\
+F[n,1] & \cdots & F[n,m] 
+\end{pmatrix}
+\end{equation*}
+
+
+7.
+\begin{equation*}
+\alpha = \frac{e^2}{2h_{\epsilon_0c}} \approx \frac{1}{137}, \ k=1.38 \times 10^{-23}\ \mathrm{JK}{-1}.
+\end{equation*}
+
+8.
+\begin{align*}
+f(x) &= \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n \cos nx + b_n \sin nx), \\
+ a_n &= \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos nx \mathrm{d}x, n = 1,2,\dots \\
+ b_n &= \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin nx \mathrm{d}x, n = 1,2,\dots
+\end{align*}
+
+	
+	
+Exercício 2.2
+
+\begin{table}[H]
+	\caption{Campos de formação do Curso de Economia}
+	\centering
+	\begin{tabular}{ l | c c }
+		\hline
+		\textbf{Campos de formação} & \textbf{CH-DCN2007} & \textbf{CH-UFPB} \\ \cline{2-3} 
+		
+		\textbf{Básico}\\  
+		I-Conteúdos de Formação Geral 					& 10\% &20\% \\
+		II-Conteúdos de Formação Teórico-Quantitativo 	& 20\% & 34\% \\
+		III-Conteúdos de Formação Histórica 			& 10\% & 10\% \\
+		
+		\textbf{Complementar}\\  
+		IV-Metodologia e TCC 							& 10\% & 18\% \\
+		
+		\textbf{Obrigatório} 							& 50\% & 82\% \\ 
+		V-Conteúdos Teóricos-Práticos(Flexível)			& 50\% & 18\% \\ \hline
+		
+		\textbf{Total} 									& 100\% & 100\% \\ \hline
+	\end{tabular}
+\end{table}
+
+	
+\end{document}
