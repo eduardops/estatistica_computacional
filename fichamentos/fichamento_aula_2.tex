@@ -40,6 +40,9 @@
 \usepackage{float}
 \usepackage{fancyvrb}
 
+% pacote de linguas
+\usepackage[brazil]{babel}
+
 
 % Comandos para ajustamento de texto
 
@@ -247,9 +250,109 @@ $$ \sqrt[3]{64} = 4 $$
 \\
 
 \section{Tabelas}
-\subsection{Estrutura básica}
-\subsection{Alinhamentos e Bordas}
-\subsection{Titulo e Fonte}
+
+Uma tabela no \LaTeX \ pode possuir a seguinte estrutura:
+
+\begin{BVerbatim}
+
+% Inicio do ambiente tabela, sendo o elemento [H] opcional, 
+% 	para posicionar a tabela na posição atual no texto
+\begin{table}[H]
+
+% opcional para o titulo da tabela
+\caption{Campos de formação do Curso de Economia}
+
+% elemento opcional para centralizar a tabela
+\centering
+
+% inicio do ambiente tabular, onde cada um dos caracteres
+% 	'c', 'l' ou 'r', definem uma coluna existente na tabela.
+% o simbolo '|' define que uma borda deve ser posicionada 
+% 	entre as colunas 
+\begin{tabular}{ l | c c }
+
+	% dentro do ambiente estará o conteúdo da tabela
+	
+	% o comando \hline posiciona uma linha horizontal na tabela
+	\hline
+	
+	% dentro do conteúdo as celulas são separadas pelo simbolo '&'
+	% 	e cada linha deve ser separada 
+	%	por uma quebra de linha '\\'
+	\textbf{Campos} & \textbf{CH-DCN2007} & \textbf{CH-UFPB} \\
+	
+	% pode ser utilizado o comando \cline para posicionar uma borda 
+	% delimitada entre as celulas descritas no parametro
+	\cline{2-3} 
+	
+	\textbf{Básico}\\  
+	I-Conteúdos de Formação Geral 	& 10\% &20\% \\
+	II-Conteúdos de Formação Teórico-Quantitativo & 20\% & 34\% \\
+	III-Conteúdos de Formação Histórica  & 10\% & 10\% \\
+	
+	\textbf{Complementar}\\  
+	IV-Metodologia e TCC & 10\% & 18\% \\
+	
+	\textbf{Obrigatório} 	& 50\% & 82\% \\ 
+	V-Conteúdos Teóricos-Práticos(Flexível)	& 50\% & 18\% \\ \hline
+	
+	\textbf{Total} 	& 100\% & 100\% \\ \hline
+\end{tabular}
+\end{table}
+\end{BVerbatim}
+\\
+\\
+\\
+\\
+
+Resultando na tabela:
+\\
+% Inicio do ambiente tabela, sendo o elemento [H] opcional, 
+% 	para posicionar a tabela na posição atual no texto
+\begin{table}[H]
+	
+	% opcional para o titulo da tabela
+	\caption{Campos de formação do Curso de Economia}
+	
+	% elemento opcional para centralizar a tabela
+	\centering
+	
+	% inicio do ambiente tabular, onde cada um dos caracteres
+	% 	'c', 'l' ou 'r', definem uma coluna existente na tabela.
+	% o simbolo '|' define que uma borda deve ser posicionada 
+	% 	entre as colunas 
+	\begin{tabular}{ l | c c }
+		
+		% dentro do ambiente estará o conteúdo da tabela
+		
+		% o comando \hline posiciona uma linha horizontal na tabela
+		\hline
+		
+		% dentro do conteúdo as celulas são separadas pelo simbolo '&'
+		% 	e cada linha deve ser separada 
+		%	por uma quebra de linha '\\'
+		\textbf{Campos} & \textbf{CH-DCN2007} & \textbf{CH-UFPB} \\
+		
+		% pode ser utilizado o comando \cline para posicionar uma borda 
+		% delimitada entre as celulas descritas no parametro
+		\cline{2-3} 
+		
+		\textbf{Básico}\\  
+		I-Conteúdos de Formação Geral 	& 10\% &20\% \\
+		II-Conteúdos de Formação Teórico-Quantitativo & 20\% & 34\% \\
+		III-Conteúdos de Formação Histórica  & 10\% & 10\% \\
+		
+		\textbf{Complementar}\\  
+		IV-Metodologia e TCC & 10\% & 18\% \\
+		
+		\textbf{Obrigatório} 	& 50\% & 82\% \\ 
+		V-Conteúdos Teóricos-Práticos(Flexível)	& 50\% & 18\% \\ \hline
+		
+		\textbf{Total} 	& 100\% & 100\% \\ \hline
+	\end{tabular}
+\end{table}
+
+
 
 	
 \end{document}
